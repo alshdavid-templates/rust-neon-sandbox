@@ -6,9 +6,13 @@ edition = "2021"
 [lib]
 crate-type = ["cdylib"]
 
-[dependencies]
-napi = { version = "2.*", default-features = false, features = ["napi8", "tokio_rt", "serde-json", "async"] }
-napi-derive = "2.*"
+[dependencies.napi]
+version = "2"
+default-features = false
+features = ["napi8", "tokio_rt", "serde-json", "async"]
+
+[dependencies.napi-derive] 
+version = "2"
 
 [build-dependencies]
-napi-build = "2.*"
+napi-build = "2"
