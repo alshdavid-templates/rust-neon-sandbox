@@ -10,7 +10,7 @@ crate-type = ["cdylib"]
 # version = "2"
 path = "/Volumes/Storage/Development/alshdavid-forks/napi-rs/crates/napi"
 default-features = false
-features = ["napi8", "tokio_rt", "serde-json", "async"]
+features = ["napi8", "async_local", "tokio_rt", "serde-json", "async"]
 
 [dependencies.napi-derive] 
 path = "/Volumes/Storage/Development/alshdavid-forks/napi-rs/crates/macro"
