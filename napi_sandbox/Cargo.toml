@@ -6,15 +6,11 @@ edition = "2021"
 [lib]
 crate-type = ["cdylib"]
 
-[dependencies.napi]
-# version = "2"
-path = "/Volumes/Storage/Development/alshdavid-forks/napi-rs/crates/napi"
-default-features = false
-features = ["napi8", "async_local", "tokio_rt", "serde-json", "async"]
+[dependencies]
+async-std = "1.12.0"
 
-[dependencies.napi-derive] 
-path = "/Volumes/Storage/Development/alshdavid-forks/napi-rs/crates/macro"
+[dependencies.neon]
 # version = "2"
+path = "/Volumes/Storage/Development/alshdavid-forks/neon/crates/neon"
+features = ["async_local"]
 
-[build-dependencies]
-napi-build = "2"
